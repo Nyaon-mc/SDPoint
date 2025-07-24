@@ -1,0 +1,8 @@
+point:
+  name: "point"
+
+check:
+  name: "check"
+
+add:
+  name: "add"

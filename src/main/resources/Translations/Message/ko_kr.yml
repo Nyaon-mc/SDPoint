@@ -1,0 +1,13 @@
+error:
+  invalid-number: "<red>입력한 값이 숫자 형식이 아닙니다. 올바른 정수를 입력해 주세요.</red>"
+
+format:
+  point: "<포인트>"
+
+success:
+  balance:
+    self: "<white>현재 보유 포인트: <yellow>[point]P</yellow></white>"
+    other: "<white>[player] 님의 보유 포인트: <yellow>[point]P</yellow></white>"
+  added:
+    sender: "<white>[player] 님에게 <green>[point]</green> 포인트가 부여되었습니다.</white>"
+    receiver: "<white>관리자로부터 <green>[point]</green> 포인트가 지급되었습니다.</white>"

@@ -1,0 +1,8 @@
+point:
+  name: "포인트"
+
+check:
+  name: "확인"
+
+add:
+  name: "추가"
