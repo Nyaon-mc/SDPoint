@@ -1,0 +1,13 @@
+error:
+  invalid-number: "<red>The entered value is not a number. Please enter a valid integer.</red>"
+
+format:
+  point: "<point>"
+
+success:
+  balance:
+    self: "<white>Current balance: <yellow>[point]P</yellow></white>"
+    other: "<white>[player]'s balance: <yellow>[point]P</yellow></white>"
+  added:
+    sender: "<white>You have granted <green>[point]</green> points to [player].</white>"
+    receiver: "<white>You have received <green>[point]</green> points from an administrator.</white>"
