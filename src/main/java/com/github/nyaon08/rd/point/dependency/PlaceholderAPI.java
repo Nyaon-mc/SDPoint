@@ -1,7 +1,7 @@
-package com.github.nyaon08.rtustudio.sd.dependency;
+package com.github.nyaon08.rd.point.dependency;
 
-import com.github.nyaon08.rtustudio.sd.SDPoint;
-import com.github.nyaon08.rtustudio.sd.manager.PointManager;
+import com.github.nyaon08.rd.point.SDPoint;
+import com.github.nyaon08.rd.point.manager.PointManager;
 import kr.rtuserver.framework.bukkit.api.integration.RSPlaceholder;
 import org.bukkit.OfflinePlayer;
 

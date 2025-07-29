@@ -1,14 +1,17 @@
-package com.github.nyaon08.rtustudio.sd.command;
+package com.github.nyaon08.rd.point.command;
 
-import com.github.nyaon08.rtustudio.sd.SDPoint;
-import com.github.nyaon08.rtustudio.sd.manager.PointManager;
+import com.github.nyaon08.rd.point.SDPoint;
+import com.github.nyaon08.rd.point.manager.PointManager;
 import kr.rtuserver.framework.bukkit.api.command.RSCommand;
 import kr.rtuserver.framework.bukkit.api.command.RSCommandData;
 import kr.rtuserver.framework.bukkit.api.configuration.translation.message.MessageTranslation;
+import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionDefault;
 
 import java.util.List;
+import java.util.UUID;
 
 public class AddPointCommand extends RSCommand<SDPoint> {
 
@@ -21,7 +24,7 @@ public class AddPointCommand extends RSCommand<SDPoint> {
 
     @Override
     protected boolean execute(RSCommandData data) {
-        Player target = provider().getPlayer(data.args(1));
+        UUID target = provider().getUniqueId(data.args(1));
         if (target == null) {
             chat().announce(message().getCommon(player(), String.valueOf(MessageTranslation.NOT_FOUND_ONLINE_PLAYER)));
             return true;
@@ -35,13 +38,13 @@ public class AddPointCommand extends RSCommand<SDPoint> {
             return true;
         }
 
-        pointManager.addPoint(target.getUniqueId(), point);
+        pointManager.addPoint(target, point);
         chat().announce(message().get(player(), "success.added.sender")
                 .replace("[player]", provider().getName(target))
                 .replace("[point]", String.valueOf(point))
         );
 
-        chat().announce(message().get(target, "success.added.receiver")
+        chat().announce(message().get(Bukkit.getPlayer(target), "success.added.receiver")
                 .replace("[point]", String.valueOf(point))
         );
 
@@ -50,7 +53,7 @@ public class AddPointCommand extends RSCommand<SDPoint> {
 
     @Override
     protected List<String> tabComplete(RSCommandData data) {
-        if (data.length(2)) return provider().getNames();
+        if (data.length(2)) return provider().names();
         if (data.length(3)) return List.of(message().get(player(), "format.point"));
         return List.of();
     }

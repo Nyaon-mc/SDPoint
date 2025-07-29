@@ -1,7 +1,7 @@
-package com.github.nyaon08.rtustudio.sd.command;
+package com.github.nyaon08.rd.point.command;
 
-import com.github.nyaon08.rtustudio.sd.SDPoint;
-import com.github.nyaon08.rtustudio.sd.manager.PointManager;
+import com.github.nyaon08.rd.point.SDPoint;
+import com.github.nyaon08.rd.point.manager.PointManager;
 import kr.rtuserver.framework.bukkit.api.command.RSCommand;
 import kr.rtuserver.framework.bukkit.api.command.RSCommandData;
 

@@ -1,4 +1,4 @@
-package com.github.nyaon08.rtustudio.sd;
+package com.github.nyaon08.rd.point;
 
 import java.util.UUID;
 

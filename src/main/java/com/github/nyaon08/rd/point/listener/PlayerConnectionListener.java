@@ -1,7 +1,7 @@
-package com.github.nyaon08.rtustudio.sd.listener;
+package com.github.nyaon08.rd.point.listener;
 
-import com.github.nyaon08.rtustudio.sd.SDPoint;
-import com.github.nyaon08.rtustudio.sd.manager.PointManager;
+import com.github.nyaon08.rd.point.SDPoint;
+import com.github.nyaon08.rd.point.manager.PointManager;
 import kr.rtuserver.framework.bukkit.api.listener.RSListener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;

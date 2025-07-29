@@ -1,6 +1,6 @@
-package com.github.nyaon08.rtustudio.sd.manager;
+package com.github.nyaon08.rd.point.manager;
 
-import com.github.nyaon08.rtustudio.sd.SDPoint;
+import com.github.nyaon08.rd.point.SDPoint;
 import kr.rtuserver.framework.bukkit.api.platform.JSON;
 import kr.rtuserver.framework.bukkit.api.storage.Storage;
 import lombok.Getter;

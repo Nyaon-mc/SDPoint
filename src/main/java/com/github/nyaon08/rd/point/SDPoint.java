@@ -1,9 +1,9 @@
-package com.github.nyaon08.rtustudio.sd;
+package com.github.nyaon08.rd.point;
 
-import com.github.nyaon08.rtustudio.sd.command.MainCommand;
-import com.github.nyaon08.rtustudio.sd.dependency.PlaceholderAPI;
-import com.github.nyaon08.rtustudio.sd.listener.PlayerConnectionListener;
-import com.github.nyaon08.rtustudio.sd.manager.PointManager;
+import com.github.nyaon08.rd.point.command.MainCommand;
+import com.github.nyaon08.rd.point.dependency.PlaceholderAPI;
+import com.github.nyaon08.rd.point.listener.PlayerConnectionListener;
+import com.github.nyaon08.rd.point.manager.PointManager;
 import kr.rtuserver.framework.bukkit.api.RSPlugin;
 import lombok.Getter;
 
